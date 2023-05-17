@@ -7,7 +7,7 @@ interface Props {
 const LoginButton: React.FC<Props> = ({ onClick }) => {
     return (
         <button onClick={onClick} className="login-button">
-            Logim
+            Login
         </button>
     );
 };
