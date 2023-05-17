@@ -1,3 +1,6 @@
+The content of the file should be:
+
+```
 import React, { useState } from 'react';
 
 const Form = () => {
@@ -10,7 +13,7 @@ const Form = () => {
     const error = true;
 
     if (error) {
-      setErrorMessage('error');
+      setErrorMessage('Please enter a valid email address');
     } else {
       // Submit the form
     }
@@ -34,3 +37,4 @@ const Form = () => {
 };
 
 export default Form;
+```
