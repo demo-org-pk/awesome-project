@@ -1,4 +1,7 @@
+The content of the CommentForm.jsx file should be modified to include sanitization of the comment message. One way to do this is by using a library like DOMPurify to sanitize the message before setting it in the state. The modified code should look like this:
+
 import React, { useState } from 'react';
+import DOMPurify from 'dompurify';
 
 const CommentForm = () => {
   const [comment, setComment] = useState('');
@@ -11,8 +14,11 @@ const CommentForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    // Sanitize the comment message
+    const sanitizedComment = DOMPurify.sanitize(comment);
+
     // Simulating server-side processing
-    setSubmittedComment(comment);
+    setSubmittedComment(sanitizedComment);
   };
 
   return (
