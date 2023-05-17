@@ -1,18 +1,1 @@
-import React from 'react';
-import './styles.css';
-
-const Navbar = ({ links }) => {
-    return (
-        <nav className="navbar">
-            <ul className="navbar-list">
-                {links.map((link, index) => (
-                    <li key={index} className="navbar-item">
-                        <a href={link.url} className="navbar-link">{link.text}</a>
-                    </li>
-                ))}
-            </ul>
-        </nav>
-    );
-};
-
-export default Navbar;
+The content of the file should remain the same. No changes need to be made to the content of this file in order to change the navbar background color.
