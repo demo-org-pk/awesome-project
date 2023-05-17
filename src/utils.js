@@ -1,8 +1,14 @@
+The content of the "../../repositories/awesome-project/src/utils.js" file should be:
+
+```javascript
 const trim = (str) => {
-    const trimmed_string = str.trim();
-    return trimmed_string;
+    const trimmedString = str.trim();
+    return trimmedString;
 }
 
 module.exports = {
     trim
 }
+``` 
+
+with the `trim` method in pascalCase.
