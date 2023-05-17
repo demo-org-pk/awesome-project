@@ -1,3 +1,6 @@
+The content of the file should be as follows:
+
+```
 import React, { useEffect } from 'react';
 
 const ItemList = () => {
@@ -9,7 +12,7 @@ const ItemList = () => {
     const items = ['Item 1', 'Item 2', 'Item 3'];
     const list = document.getElementById('item-list');
 
-    for (let i = 0; i <= items.length; i++) {
+    for (let i = 0; i < items.length; i++) {
       const listItem = document.createElement('li');
       listItem.textContent = items[i];
       list.appendChild(listItem);
@@ -25,3 +28,4 @@ const ItemList = () => {
 };
 
 export default ItemList;
+```
