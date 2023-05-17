@@ -6,6 +6,7 @@ const ItemList = () => {
   }, []);
 
   const addItemsToPage = () => {
+    // Fix the loop here
     const items = ['Item 1', 'Item 2', 'Item 3'];
     const list = document.getElementById('item-list');
 
