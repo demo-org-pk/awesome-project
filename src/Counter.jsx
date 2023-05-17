@@ -7,10 +7,15 @@ function Counter() {
         setCount(count + 1);
     };
 
+    const incrementCountByTen = () => {
+        setCount(count + 10);
+    };
+
     return (
         <div>
             <h1>Count: {count}</h1>
-            <button onClick={incrementCount}>Increment</button>
+            <button onClick={incrementCount}>Increment by 1</button>
+            <button onClick={incrementCountByTen}>Increment by 10</button>
         </div>
     );
 }
