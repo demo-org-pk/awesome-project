@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
+import DOMPurify from 'dompurify';
 
 const CommentForm = () => {
   const [comment, setComment] = useState('');
   const [submittedComment, setSubmittedComment] = useState('');
 
   const handleCommentChange = (event) => {
-    setComment(event.target.value);
+    setComment(DOMPurify.sanitize(event.target.value));
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     // Simulating server-side processing
-    setSubmittedComment(comment);
+    setSubmittedComment(DOMPurify.sanitize(comment));
   };
 
   return (
