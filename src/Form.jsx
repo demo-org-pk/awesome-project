@@ -10,7 +10,7 @@ const Form = () => {
     const error = true;
 
     if (error) {
-      setErrorMessage('error');
+      setErrorMessage('There was an error submitting the form. Please try again later.');
     } else {
       // Submit the form
     }
